@@ -2,54 +2,444 @@
 @import "_libs.styl"
 @import "_vars.styl"
 
-// all
-*
-	box-sizing border-box
-	&:before, &:after
-		box-sizing border-box
+// FAQ PART
 
-// input required valid/invalid
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color red
-body input:required:valid,
-body textarea:required:valid
-	color #666
+// HEADER
+.float-left.nav .item a
+  padding 8px 5px 8px 15px
 
-html, body
-	height 100%
 
-body
-	font-size 16px
-	min-width 320px
+.ui.button.register
+	padding 10px 8px !important
+.ui.button.login
+	padding 10px 37px 
+
+.ui.accordion .ui-item .title .dropdown.icon:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  margin: 0;
+  border: none;
+  width: 8px;
+  height: 5px;
+  background-image: url(../img/triangle.svg);
+  border-bottom: none;
+  border-left: none;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.ui.accordion .title:not(.ui) {
+  color: #515151;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  background-color: #ffffff;
+}
+
+.ui.accordion .accordion .title .dropdown.icon,
+.ui.accordion .title .dropdown.icon {
+  border-left: none;
+}
+
+.ui.accordion .title:not(.ui) {
+  padding: 25px 100px 25px 30px;
+
+}
+
+.ui.accordion .title.active {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+img.ui-item-img.hidden {
+  float: right;
+  bottom: 0;
+  position: absolute;
+  right: 20px;
+}
+
+.ui.accordion:not(.styled) .title~.content:not(.ui) p {
+  line-height: 30px;
+}
+
+.ui-item img+p {
+  padding-right: 310px;
+}
+
+.ui.accordion:not(.styled) .accordion .title~.content:not(.ui),
+.ui.accordion:not(.styled) .title~.content:not(.ui) {
+  background-color: #ffffff;
+  color: #515151;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.ui-item {
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(145, 162, 172, 0.15);
+  margin-bottom: 30px;
+}
+
+.ui.accordion .accordion .active.title .dropdown.icon:after,
+.ui.accordion .active.title .dropdown.icon:after {
+  /* transform: rotate(45deg); */
+  border-top-color: #00a2ff;
+  top: 72%;
+}
+
+.ui.accordion:not(.styled) .accordion .title~.content:not(.ui),
+.ui.accordion:not(.styled) .title~.content:not(.ui) {
+  padding: 7px 30px 20px;
+  position: relative;
+}
+
+.ui-item-img
+  position relative
+  margin-top -55px
+
+
+.dropdown-item a
 	position relative
-	line-height 1.65
-	font-family $default-font
-	overflow-x hidden
-	margin 0
+	&:after
+		content ''
+		position absolute
+		width 0
+		height 0
+		border 5px solid transparent
+		border-top-color #fff
+		display inline-block
+		right -10px
+		top 16px
 
-img
+.ui.item.lang.dropdown-item 
+	margin-right 0
+	margin-top 0
+	.menu 
+		background-color #2b2d32
+		padding 13px 0
+		&:after 
+			background #2b2d32
+		a 
+			margin-left 0
+			color #ffffff
+			font-size 16px
+			font-weight 700
+			line-height 26px
+			text-transform uppercase
+			&:after 
+				display none
+		.item 
+			padding 4px 20px 3px !important
+			&:hover 
+				color #00a2ff
+
+.ui.sidebar
+	.dropdown-item
+		display block
+		a 
+			width 100%
+			display inline-block
+			&:after 
+				right 5px
+				top 9px
+
+.ui.sidebar.menu .ui.item.lang
 	display block
-	max-width 100%
-	height auto
 
-ul 
-	margin 0
-	padding 0
+.menu-none
+	display none !important
 
-li 
-	list-style-type none
 
-h1,h2,h3,
-h4,h5,h6 
-	margin 0
-	padding 0
-	
-p 
-	margin 0
-	padding 0
+// PAGE AUTO REINVESTING 
+.goods
+  margin-top 75px
+  .list 
+    margin-top 20px
+    text-align center
+    li
+      text-align left
+      display inline-block
+      vertical-align middle
+      opacity 0.5
+      margin-top 60px
 
-a
-	transition .2s color ease-in
+.goods .list li.act{opacity: 1;}
+.goods .list .g-item{
+    width: 235px;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 105px;
+    position: relative;
+}
+.goods .list .or{
+    margin: 0 15px;
+    font-size: 20px;
+    color: #515151;
+    letter-spacing: 0;
+    line-height: 25px;
+}
+.goods .list  .img{
+    height: 184px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 120px;
+    left: 0;
+}
+.goods .list  .img:after{
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    width: 0;
+    height: 100%;
+}
+.goods .list  .img img{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.goods .list .t1{
+    font-size: 20px;
+    color: #515151;
+    letter-spacing: 0;
+    line-height: 25px;
+    font-weight: 300;
+}
+.goods .list .t2{
+    font-size: 15px;
+    color: #FF88AE;
+    letter-spacing: 0;
+    line-height: 20px;
+    font-weight: 300;
+}
+.goods .list .gal{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border:1px solid #1C9EE1;
+    cursor: pointer;
+}
+
+
+
+.goods .list .gal.act{
+    background: #1C9EE1 url(../img/tick.svg) 50% / 70% no-repeat;
+}
+
+.btn-c 
+  text-align center 
+  margin-top 68px
+  .btn
+    display inline-block
+    background #00A2FF
+    font-size 16px
+    color #FFFFFF
+    letter-spacing 0
+    text-align center
+    line-height 27px
+    font-weight 700
+    padding 15px 120px
+    text-transform uppercase
+    margin 0 auto
+    transition all .3s ease
+    &:hover 
+      background #111
+
+
+.h3 
+  font-size 24px
+  color #2B2D32
+  letter-spacing 0
+  text-align center
+  line-height 34px
+  font-weight 300
+  margin-bottom 50px
+
+
+.auto
+  &-bg 
+    background #eef4f7
+    padding 42px 0 103px
+  &-head 
+    color #2b2d32
+    font-family "Roboto", sans-serif
+    font-size 24px
+    font-weight 300
+    line-height 34px
+    padding-bottom 5px
+  &-body 
+    text-align center
+    margin-top 13px
+  &-description 
+    color #2b2d32
+    font-family "Roboto", sans-serif
+    font-size 16px
+    font-weight 300
+    line-height 24px
+  &-item 
+    display flex
+    background-color #ffffff
+    padding 20px 30px 5px
+  &-contract 
+    width 13.4em
+    text-align left
+  &-percentage 
+    width 30.4em
+    padding-left 152px
+    text-align left
+  &-balance
+    display flex
+    width 19.6em
+    text-align right
+    justify-content flex-end
+    align-items center
+    position relative
+    top -8px
+  &-cur 
+    font-family "Roboto", sans-serif
+    font-size 16px
+    font-weight 300
+    line-height 26px
+    text-transform uppercase
+    padding-right 14px
+    margin-left 24px
+  &-amount 
+    color #2b2d32
+    font-family "Roboto", sans-serif
+    font-size 16px
+    font-weight 300
+    line-height 26px
+    background-color #f4f4f4
+    padding 7px 37px
+    width 100px
+    text-align center
+  &-titles 
+    display flex 
+    padding 20px 30px 20px
+    background-color #00a2ff
+  &-title 
+    color #ffffff
+    font-family "Roboto", sans-serif
+    font-size 16px
+    font-weight 700
+    line-height 26px
+    &-contract 
+      width 13.7em
+      text-align left
+    &-percentage
+      width 24.5em
+    &-balance
+      width 25.7em
+      text-align right
+  &-table
+    margin 30px 0
+
+
+
+.switch
+  position relative
+  width 56px
+  height 30px
+  border-radius 20px
+  margin -3px auto 0
+  background-color #CBCCCF
+  text-align left
+  padding 2px
+  cursor pointer
+  span 
+    height 25px
+    width 24px
+    display inline-block
+    background-color #fff
+    border-radius 18px
+    box-shadow 0 2px 5px 0 rgba(0,0,0,0.3)
+.switch.act
+    text-align right
+    background #00A2FF
+
+
+.sl-wr
+    padding 0 50px 0 60px
+    position relative
+    .tt
+      font-size 14px
+      color #2B2D32
+      letter-spacing 0
+      line-height 10px
+      font-weight 300
+      position absolute
+      text-align left
+      top -9px
+      span 
+        color #2b2d32
+        font-family "Roboto", sans-serif
+        font-size 12px
+        font-weight 300
+      b 
+        // color #00A2FF
+        color #cbcccf
+        letter-spacing 0
+        line-height 24px
+        font-weight 700
+        font-size 12px
+
+    #amount,
+    #amount2
+      font-size 20px
+      .nn
+        font-size 12px  
+
+.sl-wr .tt1{
+    left: 0;
+}
+.sl-wr .tt2{
+    right: 0;
+}
+.ui-widget.ui-widget-content, .ui-slider .ui-slider-range{
+    border-radius: 10px !important;
+}
+.ui-slider .ui-slider-handle{
+    background:  url(../img/scroll.svg) 0 0 no-repeat  !important;
+    border: 0 !important;
+    width: 24px !important;
+    height: 24px !important;
+    top:-.4em !important;
+}
+.ui-widget-header{
+    background-color: #cbcccf !important;
+}
+.ui-widget.ui-widget-content
+  height 10px
+  border none !important
+  background-color: #eef4f7
+.ui-slider-horizontal .ui-slider-range
+  height 10px
+
+span.ui-slider-handle.ui-corner-all.ui-state-default
+  &:focus 
+    outline none 
+
+
+.current 
+  .sl-wr
+    .tt
+      b
+        color #00A2FF
+  .ui-widget-header
+    background-color #00a2ff !important
+  .auto-amount 
+    background-color #f6fafc
 
 @import "_media.styl" // Always at the end
