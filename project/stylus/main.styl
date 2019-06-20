@@ -463,4 +463,287 @@ span.ui-slider-handle.ui-corner-all.ui-state-default
   margin-top 70px
   display none !important
 
+
+
+// REF PAGE
+
+.ref
+  &-page
+    padding 45px 20px 55px
+  &-bg 
+    padding 40px 0
+    background #eef4f7
+  &-current 
+    display flex
+    justify-content space-between
+    margin-top 42px
+    &-value 
+      color: #00a0ff
+      font-family: "Roboto", sans-serif
+      font-size: 20px
+      font-weight: 500
+      line-height: 26px
+    &-text 
+      color #2b2d32
+      font-family "Roboto", sans-serif
+      font-size 16px
+      font-weight 300
+      line-height 26px
+    &-money
+      display flex
+      justify-content space-between
+      flex-grow 2.8
+      padding 18px 30px 18px
+      background-color #ffffff
+      margin-right 20px
+  &-transfer
+    flex-grow .2
+  &-button 
+    color #ffffff
+    font-family "Roboto", sans-serif
+    font-size 16px
+    font-weight 700
+    line-height 27px
+    text-transform uppercase
+    background-color #00a2ff
+    padding 18px 
+    display block
+    transition all .3s ease
+    &:hover 
+      color #fff
+      background-color #0e88be
+  &-notification 
+    color #515151
+    font-family "Roboto"
+    font-size 12px
+    font-weight 300
+    line-height 18px
+    text-align left
+    margin 8px 0 52px
+  &-date
+    display flex
+    justify-content flex-end
+    flex-grow 2
+    &-wrapper
+      display flex
+      justify-content space-between
+    &-one 
+      display flex
+      justify-content space-between
+      align-items center
+    &-two 
+      display flex
+      justify-content space-between
+      align-items center
+    &-before 
+      width 35px
+      height 100%
+      background #fff
+      display flex
+      align-items center
+      justify-content center
+      margin-right 2px
+    &-text 
+      margin 0 10px 0 20px
+      color #2b2d32
+      font-family "Roboto", sans-serif
+      font-size 16px
+      font-weight 300
+      line-height 26px
+  &-search 
+    flex-grow .6
+    position relative
+    &:after 
+      background-image url(../img/icon-search.svg)
+      content ''
+      position absolute
+      top 12px
+      right 19px
+      width 17px
+      height 17px
+  &-input 
+    padding .7em 3em .7em 1em !important
+  &-datepicker
+    position relative
+    &:after 
+      background-image url(../img/dropdown_arrow_b.png)
+      content ''
+      position absolute
+      top 18px
+      right 18px
+      width 8px
+      height 5px
+  &-th 
+    &-span 
+      color #2b2d32
+      font-family "Roboto", sans-serif
+      font-size 16px
+      font-weight 500
+      line-height 26px
+      display inline-block
+      position relative
+      &:after 
+        background-image url(../img/dropdown_arrow_b.png)
+        content ''
+        position absolute
+        top 10px
+        right -18px
+        width 8px
+        height 5px
+  &-materials 
+    margin-top 76px
+  &-table
+    &-wrapper
+      position relative
+  &-choose 
+    display flex
+    justify-content space-between
+  &-banners
+    display flex
+    justify-content space-between
+  &-languages 
+    display flex 
+    justify-content space-between
+  &-language
+    &-link 
+      color #2b2d32
+      font-family "Roboto", sans-serif
+      font-size 16px
+      font-weight 300
+      line-height 26px
+      background-color #fff
+      width 81px
+      display inline-block
+      padding 6px 0
+      margin-left 2px
+      transition all .3s ease
+      &:hover 
+        background-color #00a2ff
+        color #fff
+      &-active 
+        background-color #00a2ff
+        color #fff
+      
+  
+.ref-table
+  border-collapse collapse
+  text-align left
+  width 100%
+  margin-top 20px
+  th 
+    background-color #f9fbfc
+    padding 18px 30px
+  tr 
+    background white 
+  td 
+    padding 20px 30px
+    position relative
+    font-family: "Roboto", sans-serif
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    &:first-child
+      padding-left 49px
+    
+.table-button 
+  width 42px
+  height 42px
+  background-color #00a2ff
+  display inline-block
+  display flex
+  align-items center 
+  justify-content center
+  color #fff
+  font-size 40px
+  border-radius 50%
+  transition all .3s ease
+  top 32%
+  right -2%
+  position absolute
+  &:hover 
+    background-color #0e88be
+    color #fff
+
+.icon-link 
+  position absolute
+  top 27px
+  left 30px
+
+.ui-datepicker table
+  background-color #fff
+
+.datepicker 
+  max-width 143px
+  position relative
+  color #2b2d32
+  font-family "Roboto"
+  font-size 16px
+  font-weight 300
+  line-height 26px
+    
+.title-small
+  color: #2b2d32;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 34px;
+  text-align left
+  margin-bottom 8px
+
+.ref-info 
+  color #515151
+  font-family "Roboto", sans-serif
+  font-size 10px
+  font-weight 300
+  line-height 18px
+  display inline-block
+  padding 11px 10px 10px 15px
+  max-width 170px
+  background-color #fff
+  position absolute
+  left 62.3%
+  top -217%
+  display none
+.info-icon 
+  position relative
+  top 3px
+  left 4px
+  &:hover 
+    .ref-info
+      display none
+
+.show-info
+  display block
+
+.page-title
+  color #2b2d32
+  font-family "Roboto", sans-serif
+  font-size 24px
+  font-weight 300
+  line-height 34px
+  position relative
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button
+    text-align center
+    border none
+    background none
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+  background-color #00a2ff
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus
+  border none
+  background #fff
+
+.ui-datepicker-prev.ui-corner-all.ui-state-hover
+  top 2px !important
+  left 2px !important
+.ui-datepicker-next.ui-corner-all.ui-state-hover
+  top 2px !important
+  right 2px !important
+
+.ui-widget-header
+  background-color #00a2ff !important
+  color #fff
 @import "_media.styl" // Always at the end

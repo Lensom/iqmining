@@ -123,6 +123,33 @@ $('.auto-amount-input').keypress(function (e) {
     });
   });
 
+  // ref page
+
+  $('.info-icon').on('mouseenter', MouseEnter )
+  $('.info-icon').on('mouseleave', MouseLeave )
+
+  function MouseEnter() {
+    $('.ref-info').addClass('show-info');
+  }
+  function MouseLeave() {
+    $('.ref-info').removeClass('show-info');
+  }
+
+  $( function() {
+    $( "#datepicker" ).datepicker({
+      dateFormat: 'dd-mm-yy',
+    });
+    $( "#datepicker2" ).datepicker({
+      dateFormat: 'dd-mm-yy',
+    });
+  } );
+
+  $(function() {
+
+    $('.ref-select').styler();
+  
+  });
+
 });
 
 

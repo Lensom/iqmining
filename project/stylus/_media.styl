@@ -152,3 +152,74 @@
 		.list
 			.g-item
 				width 220px
+
+
+// MEDIA FOR PROGRAM
+@media (max-width: 1160px)
+	.table-button 
+		right -1%
+
+@media (max-width: 840px)
+	.ref
+		&-date 
+			justify-content flex-start
+			&-wrapper
+				flex-direction column
+		&-search 
+			margin-bottom 20px
+@media (max-width: 600px)
+	.ref
+		&-current
+			flex-direction column
+			&-money 
+				margin-right 0
+				padding 9px 15px 9px
+		&-transfer
+			margin-top 20px
+		&-button 
+			padding 9px
+		&-date 
+			&-text 
+				margin 0
+			&-before 
+				display none
+		&-datepicker
+			margin 0 10px
+		&-notification 
+			margin-bottom 20px
+
+@media (max-width: 510px)
+	.ref 
+		&-date 
+			flex-direction column
+		&-datepicker 
+			margin 5px 0
+	table 
+		th
+			padding 10px 15px 
+		td 
+			padding 12px 15px
+			&:first-child 
+				padding 12px 15px
+	.icon-link 
+		display none
+	.table-button 
+		top 110%
+		right calc(50% - 21px)
+
+@media (max-width: 420px)
+	table
+		th 
+			padding 7px
+		td 
+			padding 9px 7px
+			font-size 14px
+			&:first-child
+				padding 9px 7px
+	.ref
+		&-th 
+			&-span 
+				font-size 14px
+				&:after 
+					top 12px 
+					right -10px
