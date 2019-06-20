@@ -1,18 +1,107 @@
 @import "_vars.styl"
 
-/*==========  Desktop First  ==========*/
-
-/* Large Devices, Wide Screens */
-@media (max-width : 1160px)
+@media (max-width: 1160px)
+	.float-left.nav .item+.item
+		margin-left 0
+	.ui.item.lang
+		margin-right 5px
+		margin-top 30px
+	.ui.dropdown.lang .menu
+		margin-left 0 !important
+		position relative
+		z-index 2
 	.float-right.nav
 		padding-top 3px
 
-/* Medium Devices, Desktops */
-@media (max-width : 992px)
-	/**/
+@media (max-width: 1140px)
+	.auto-percentage
+		padding-left 12.8%
 
-/* Small Devices, Tablets */
-@media (max-width : 768px)
+@media (max-width: 998px)
+	.ui-item-img 
+		display none
+	.ui-item img+p
+		padding 0
+	.goods
+		.list
+			padding-left 0
+			li 
+				margin 120px 15px 0
+			.or 
+				display none
+	.auto
+		&-table
+			display none
+		&-item 
+			flex-direction column
+			padding 16px 20px 10px 
+			text-align left
+			box-shadow 0 10px 30px rgba(145, 162, 172, 0.15)
+			border-radius 5px
+			background-color #ffffff
+			max-width 60%
+			margin 0 auto 20px
+		&-title 
+			color #2b2d32
+			font-family "Roboto", sans-serif
+			font-size 14px
+			font-weight 300
+			line-height 22px
+			margin-bottom 5px
+		&-contract 
+			color #00a2ff
+			font-family "Roboto", sans-serif
+			font-size 16px
+			font-weight 700
+			text-transform uppercase
+			width 100%
+			margin-bottom 7px
+		&-percentage 
+			padding-left 0
+			width 100%
+			margin 10px 0 50px
+		&-status 
+			margin-bottom 10px
+		&-balance 
+			width 100%
+			justify-content flex-start
+			margin-top 10px
+		&-amount 
+			width 60px
+			&-input 
+				padding 5px !important
+				font-size 14px
+		&-cur 
+			font-size 14px
+			margin-left 10px
+	.sl-wr
+		padding 0
+		margin-top -6px
+		.tt 
+			top 20px
+			span 
+				font-size 10px
+			b 
+				line-height 14px
+	.sl-wr #amount, .sl-wr #amount2, .sl-wr #amount3, .sl-wr #amount4, .sl-wr #amount5, .sl-wr #amount6, .sl-wr #amount7, .sl-wr #amount8
+		font-size 16px
+	.switch
+		margin 0
+		width 47px
+		height 25px
+		span 
+			width 21px
+			height 21px
+			box-shadow 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.16), 0 3px 8px rgba(0, 0, 0, 0.15)
+			border-radius 100px
+			border 1px solid rgba(0, 0, 0, 0.04)
+			background-color #ffffff
+	.owl-auto
+		display block !important
+
+	.faq-page
+		padding 50px 0
+@media (max-width: 768px)
 	.ui.accordion .title:not(.ui)
 		font-size 18px
 		line-height 26px
@@ -21,11 +110,18 @@
 		line-height 26px
 	.ui.accordion .accordion .active.title .dropdown.icon:after, .ui.accordion .active.title .dropdown.icon:after
 		top 63%
+	.owl-auto 
+		margin 30px 0
 
-/* Extra Small Devices, Phones */
-@media (max-width : 480px)
+@media (max-width: 640px)
+	.auto-item
+		max-width 100%
+	.faq-page
+		padding 30px 0
+
+@media (max-width: 480px)
 	.ui.accordion .title:not(.ui) 
-		padding 15px 40px 5px 15px
+		padding 12px 40px 12px 15px
 		font-size 16px
 		line-height 24px
 	.ui.accordion:not(.styled) .accordion .title~.content:not(.ui), .ui.accordion:not(.styled) .title~.content:not(.ui)
@@ -34,33 +130,25 @@
 		line-height 24px
 	.ui.accordion .accordion .active.title .dropdown.icon:after, .ui.accordion .active.title .dropdown.icon:after
 		top 50%
+	.goods
+		.h3 
+			margin-bottom 0
+		.list
+			li 
+				margin 120px 8px 30px
+			.g-item 
+				width 160px
+				padding: 105px 15px 15px 15px
+			.img
+				bottom 120px
+			.t1 
+				font-size 16px
+				line-height 24px
+				br 
+					display none
 
-
-@media (max-width: 1160px) {
-  .float-left.nav .item+.item {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 1160px)
-	.ui.item.lang
-		margin-right 5px
-		margin-top 30px
-
-
-@media (max-width: 1160px)
-	.ui.dropdown.lang .menu
-		margin-left 0 !important
-		position relative
-		z-index 2
-	
-
-
-@media (max-width: 998px) {
-  .ui-item-img {
-    display: none;
-  }
-  .ui-item img+p {
-    padding: 0;
-  }
-}
+@media (max-width: 355px)
+	.goods
+		.list
+			.g-item
+				width 220px

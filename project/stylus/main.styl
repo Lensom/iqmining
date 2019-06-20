@@ -172,22 +172,21 @@ img.ui-item-img.hidden {
       vertical-align middle
       opacity 0.5
       margin-top 60px
+    li.act 
+      opacity 1
+    .g-item 
+      width 235px
+      background-color #fff
+      padding 105px 20px 20px 20px
+      position relative
+    .or 
+      margin 0 15px
+      font-size 20px
+      color #515151
+      letter-spacing 0
+      line-height 25px
+      
 
-.goods .list li.act{opacity: 1;}
-.goods .list .g-item{
-    width: 235px;
-    background-color: #fff;
-    padding: 20px;
-    padding-top: 105px;
-    position: relative;
-}
-.goods .list .or{
-    margin: 0 15px;
-    font-size: 20px;
-    color: #515151;
-    letter-spacing: 0;
-    line-height: 25px;
-}
 .goods .list  .img{
     height: 184px;
     position: absolute;
@@ -257,7 +256,6 @@ img.ui-item-img.hidden {
     &:hover 
       background #111
 
-
 .h3 
   font-size 24px
   color #2B2D32
@@ -266,7 +264,6 @@ img.ui-item-img.hidden {
   line-height 34px
   font-weight 300
   margin-bottom 50px
-
 
 .auto
   &-bg 
@@ -290,18 +287,20 @@ img.ui-item-img.hidden {
     line-height 24px
   &-item 
     display flex
-    background-color #ffffff
+    background-color rgba(255, 255, 255, .7)
     padding 20px 30px 5px
+    &:nth-child(odd)
+      background-color #ffffff
   &-contract 
     width 13.4em
     text-align left
   &-percentage 
     width 30.4em
-    padding-left 152px
+    padding-left 14%
     text-align left
   &-balance
     display flex
-    width 19.6em
+    width 17.2em
     text-align right
     justify-content flex-end
     align-items center
@@ -322,9 +321,20 @@ img.ui-item-img.hidden {
     font-weight 300
     line-height 26px
     background-color #f4f4f4
-    padding 7px 37px
     width 100px
     text-align center
+    border none
+    &-input 
+      height auto !important
+      padding 7px !important
+      min-height auto !important
+      text-align center
+      background-color rgba(244, 244, 244, .8) !important
+      color: #2b2d32;
+      font-family: "Roboto";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 26px;
   &-titles 
     display flex 
     padding 20px 30px 20px
@@ -345,8 +355,6 @@ img.ui-item-img.hidden {
       text-align right
   &-table
     margin 30px 0
-
-
 
 .switch
   position relative
@@ -369,7 +377,6 @@ img.ui-item-img.hidden {
     text-align right
     background #00A2FF
 
-
 .sl-wr
     padding 0 50px 0 60px
     position relative
@@ -388,7 +395,6 @@ img.ui-item-img.hidden {
         font-size 12px
         font-weight 300
       b 
-        // color #00A2FF
         color #cbcccf
         letter-spacing 0
         line-height 24px
@@ -396,41 +402,48 @@ img.ui-item-img.hidden {
         font-size 12px
 
     #amount,
-    #amount2
+    #amount2,
+    #amount3,
+    #amount4,
+    #amount5,
+    #amount6,
+    #amount7,
+    #amount8
       font-size 20px
       .nn
         font-size 12px  
 
-.sl-wr .tt1{
-    left: 0;
-}
-.sl-wr .tt2{
-    right: 0;
-}
-.ui-widget.ui-widget-content, .ui-slider .ui-slider-range{
-    border-radius: 10px !important;
-}
-.ui-slider .ui-slider-handle{
-    background:  url(../img/scroll.svg) 0 0 no-repeat  !important;
-    border: 0 !important;
-    width: 24px !important;
-    height: 24px !important;
-    top:-.4em !important;
-}
-.ui-widget-header{
-    background-color: #cbcccf !important;
-}
+.sl-wr 
+  .tt1
+    left 0
+  .tt2
+    right 0
+
+.ui-widget.ui-widget-content, .ui-slider .ui-slider-range
+  border-radius 10px !important
+
+.ui-slider
+  .ui-slider-handle
+    background  url(../img/scroll.svg) 0 0 no-repeat  !important
+    border 0 !important
+    width 24px !important
+    height 24px !important
+    top -.4em !important
+    cursor pointer
+
+.ui-widget-header
+  background-color #cbcccf !important
+
 .ui-widget.ui-widget-content
   height 10px
   border none !important
-  background-color: #eef4f7
+  background-color #eef4f7
 .ui-slider-horizontal .ui-slider-range
   height 10px
 
 span.ui-slider-handle.ui-corner-all.ui-state-default
   &:focus 
     outline none 
-
 
 .current 
   .sl-wr
@@ -441,5 +454,13 @@ span.ui-slider-handle.ui-corner-all.ui-state-default
     background-color #00a2ff !important
   .auto-amount 
     background-color #f6fafc
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled
+  opacity 1
+
+
+.owl-auto
+  margin-top 70px
+  display none !important
 
 @import "_media.styl" // Always at the end

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icons/tick</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="IQMining-Total-Earned-6" transform="translate(-1240.000000, -1182.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="MacBook" transform="translate(793.000000, 904.000000)">
+                <g id="icons/tick" transform="translate(447.000000, 278.000000)">
+                    <path d="M5.2976829,8.64934018 L2.51584272,5.86749999 C2.05473412,5.40634527 1.30710559,5.40635953 0.845908242,5.86746463 C0.384706094,6.32862065 0.384706094,7.07627645 0.845872878,7.53744324 L4.46270231,11.1542195 C4.92366429,11.6153198 5.67166647,11.61522 6.13266955,11.1542169 L14.7710437,2.51584272 C15.2322014,2.05473117 15.2321871,1.30706241 14.7710614,0.845890561 C14.309926,0.38470904 13.5622838,0.38470904 13.1010915,0.845855198 L5.2976829,8.64934018 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
