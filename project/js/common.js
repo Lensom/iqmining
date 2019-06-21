@@ -212,6 +212,25 @@ $('.auto-amount-input').keypress(function (e) {
   });
 
 
+  var popup = document.getElementById("popupModal");
+  var btnClick = document.getElementById("modalPopup");
+  var spanClose = document.getElementsByClassName("modal-close")[0];
+  btnClick.onclick = function(e) {
+    e.preventDefault();
+    popup.style.display = "block";
+  }
+  spanClose.onclick = function() {
+    popup.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target == popup) {
+      popup.style.display = "none";
+    }
+  }
+
+
+
+
 });
 
 

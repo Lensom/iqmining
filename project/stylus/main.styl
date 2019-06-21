@@ -866,7 +866,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  z-index: 2;
+  z-index: 14;
 }
 
 /* Modal Content/Box */
@@ -1005,5 +1005,61 @@ span.ui-slider-handle.ui-corner-all.ui-state-default
     position absolute
     top 19px
     right 21px
+
+
+// PAGE POPUP
+.modal-popup
+  z-index 11
+  .modal
+    &-content 
+      background-color #15161d
+      background-image url(../img/back_img.png)
+      max-width 760px
+      padding 60px
+      border none
+    &-title 
+      font-family "Roboto", sans-serif
+      font-size 50px
+      color #FFFFFF
+      letter-spacing 0
+      text-align center
+      line-height 54px
+      font-weight 900
+      margin-top -12px
+    &-graph 
+      position relative
+      top -103px
+      img
+        max-width 100%
+    &-switcher
+      text-align center
+      margin-top -8px
+    &-popup
+      &-close 
+        position absolute
+        top 20px
+        right 20px
+    &-booster 
+      margin-top -145px
+      text-align center
+      position relative
+      z-index 2
+      a 
+        font-family "Roboto", sans-serif
+        font-weight 700
+        font-size 22px
+        color #FFFFFF
+        letter-spacing 0.69px
+        text-align center
+        display inline-block
+        background-image: linear-gradient(90deg, #7441FF 0%, #1A9FE0 100%)
+        box-shadow: 10px 10px 20px 0 rgba(0,0,0,0.50)
+        padding 30px 48px 30px 51px
+        border-radius 41px
+        text-transform uppercase
+        &:hover 
+          background-image: linear-gradient(90deg, #1A9FE0 0%, #7441FF 100%)
+
+
 
 @import "_media.styl" // Always at the end
