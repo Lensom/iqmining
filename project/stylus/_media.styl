@@ -167,6 +167,62 @@
 				flex-direction column
 		&-search 
 			margin-bottom 20px
+	#watchModal
+		.modal-content
+			margin 30% auto
+
+@media (max-width: 710px)
+	.ref
+		&-choose 
+			flex-direction column 
+			justify-content flex-start
+		&-languages 
+			justify-content flex-start
+			margin-top 20px
+		&-banners 
+			justify-content flex-start
+		&-bg 
+			padding 40px 0
+	.modal
+		&-content 
+			margin 32% auto
+			padding 20px 15px
+			max-width 96%
+		&-choose 
+			font-size 14px
+			padding 14px 20px
+		&-current
+			&-contract 
+				font-size 18px
+		&-hs 
+			font-size 18px
+		&-close 
+			margin-top 9px
+		&-p
+			font-size 14px
+		&-list 
+			font-size 14px
+		&-sum 
+			&-input 
+				font-size 14px
+				padding 15px 20px 15px !important
+		.jq-selectbox__select 
+			padding 15px 20px 15px
+			font-size 14px
+		.jq-selectbox__trigger-arrow:after
+			top 12px
+	#watchModal
+		.modal-content
+			padding 25px
+			max-width 96%
+		.close 
+			top 3px
+			right 5px
+
+	.btn-confirm 
+		padding 10px 40px
+	
+
 @media (max-width: 600px)
 	.ref
 		&-current
@@ -187,6 +243,10 @@
 			margin 0 10px
 		&-notification 
 			margin-bottom 20px
+	.btn-show-more
+		.btn
+			padding 10px 30px
+			font-size 14px
 
 @media (max-width: 510px)
 	.ref 
@@ -194,7 +254,7 @@
 			flex-direction column
 		&-datepicker 
 			margin 5px 0
-	table 
+	.ref-table 
 		th
 			padding 10px 15px 
 		td 
@@ -206,9 +266,14 @@
 	.table-button 
 		top 110%
 		right calc(50% - 21px)
+	.ref-promo 
+		th
+			padding 10px 15px 
+		td 
+			padding 12px 15px
 
 @media (max-width: 420px)
-	table
+	.ref-table 
 		th 
 			padding 7px
 		td 
@@ -223,3 +288,18 @@
 				&:after 
 					top 12px 
 					right -10px
+		&-language 
+			&-link 
+				font-size 14px
+				margin-left 0
+				margin-right 2px
+				width 70px 
+				padding 3px 0
+	.jq-selectbox__select-text
+		font-size 14px
+	.jq-selectbox__select
+		padding 5px 20px 5px 10px
+		width 133px
+	.jq-selectbox__trigger-arrow:after
+		right -31px
+		top 3px
